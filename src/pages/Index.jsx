@@ -6,11 +6,11 @@ const Index = () => {
   const colorModeIcon = useColorModeValue(<FaMoon />, <FaSun />);
 
   return (
-    <Container maxW="container.xl" p={4}>
+    <Container maxW="container.xl" p={4} bg="brand.900" color="brand.electricBlue">
       <VStack spacing={8}>
         {/* Header */}
         <HStack justifyContent="space-between" width="100%">
-          <Heading as="h1" size="lg">
+          <Heading as="h1" size="lg" color="brand.electricBlue">
             Software House
           </Heading>
           <IconButton aria-label="Toggle Color Mode" icon={colorModeIcon} onClick={toggleColorMode} />
@@ -18,40 +18,40 @@ const Index = () => {
 
         {/* Hero Section */}
         <Box textAlign="center">
-          <Heading as="h2" size="2xl">
+          <Heading as="h2" size="2xl" color="brand.electricBlue">
             Innovative Software Solutions
           </Heading>
           <Text fontSize="xl" mt={4}>
             We build scalable and efficient software tailored to your business needs.
           </Text>
-          <Button colorScheme="teal" size="lg" mt={6}>
+          <Button colorScheme="brand.electricBlue" size="lg" mt={6}>
             Get Started
           </Button>
         </Box>
 
         {/* Services Section */}
         <VStack spacing={4} align="start" width="100%">
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size="lg" color="brand.electricBlue">
             Our Services
           </Heading>
           <HStack spacing={8} wrap="wrap" justifyContent="space-around" width="100%">
             <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" p={4}>
               <Image src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3MTY4MDUwMjd8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Web Development" />
-              <Heading as="h4" size="md" mt={4}>
+              <Heading as="h4" size="md" mt={4} color="brand.electricBlue">
                 Web Development
               </Heading>
               <Text mt={2}>Building responsive and high-performance web applications.</Text>
             </Box>
             <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" p={4}>
               <Image src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3MTY4MDUwMjh8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Mobile Development" />
-              <Heading as="h4" size="md" mt={4}>
+              <Heading as="h4" size="md" mt={4} color="brand.electricBlue">
                 Mobile Development
               </Heading>
               <Text mt={2}>Creating mobile applications for both Android and iOS platforms.</Text>
             </Box>
             <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" p={4}>
               <Image src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMHNvbHV0aW9uc3xlbnwwfHx8fDE3MTY4MDUwMjh8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Cloud Solutions" />
-              <Heading as="h4" size="md" mt={4}>
+              <Heading as="h4" size="md" mt={4} color="brand.electricBlue">
                 Cloud Solutions
               </Heading>
               <Text mt={2}>Offering scalable cloud solutions to meet your business demands.</Text>
@@ -60,7 +60,7 @@ const Index = () => {
         </VStack>
 
         {/* Footer */}
-        <HStack justifyContent="space-between" width="100%" pt={8} borderTopWidth="1px">
+        <HStack justifyContent="space-between" width="100%" pt={8} borderTopWidth="1px" borderColor="brand.electricBlue">
           <Text>&copy; {new Date().getFullYear()} Software House. All rights reserved.</Text>
           <HStack spacing={4}>
             <IconButton aria-label="Facebook" icon={<FaFacebook />} />
